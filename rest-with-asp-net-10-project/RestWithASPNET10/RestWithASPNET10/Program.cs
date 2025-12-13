@@ -3,6 +3,7 @@ using RestWithASPNET10.Services;
 using RestWithASPNET10.Services.Impl;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.AddSerilogLogging();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IPersonServices, PersonServicesImpl>();
 builder.Services.AddOpenApi();
