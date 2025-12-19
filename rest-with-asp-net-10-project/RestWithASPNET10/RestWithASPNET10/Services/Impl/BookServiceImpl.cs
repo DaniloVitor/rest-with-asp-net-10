@@ -1,4 +1,5 @@
-﻿using RestWithASPNET10.Data.Converter.Contract;
+﻿using Mapster;
+using RestWithASPNET10.Data.Converter.Contract;
 using RestWithASPNET10.Data.DTO;
 using RestWithASPNET10.Model;
 using RestWithASPNET10.Repositories;
@@ -14,14 +15,13 @@ namespace RestWithASPNET10.Services.Impl
         public BookServiceImpl(IRepository<Book> repository)
         {
             _repository = repository;
-            _converter = new BookConverter();
         }
 
         public BookDTO Create(BookDTO book)
         {
-            var entidade = _converter.Parser(book);
+            var entidade = book.Adapt<Book>();
             entidade = _repository.Create(entidade);
-            return _converter.Parser(entidade);
+            return entidade.Adapt<BookDTO>();
         }
 
         public void Delete(long id)
@@ -31,24 +31,19 @@ namespace RestWithASPNET10.Services.Impl
 
         public List<BookDTO> FindAll()
         {
-            return _converter.ParseList(_repository.FindAll());
+            return _repository.FindAll().Adapt<List<BookDTO>>();
         }
 
         public BookDTO FindById(long id)
         {
-            return _converter.Parser(_repository.FindById(id));
-        }
-
-        public BookDTO FindByName(string title)
-        {
-            throw new NotImplementedException();
+            return _repository.FindById(id).Adapt<BookDTO>();
         }
 
         public BookDTO Update(BookDTO book)
         {
-            var entidade = _converter.Parser(book);
+            var entidade = book.Adapt<Book>();
             entidade = _repository.Update(entidade);
-            return _converter.Parser(entidade);
+            return entidade.Adapt<BookDTO>();
         }
     }
 }

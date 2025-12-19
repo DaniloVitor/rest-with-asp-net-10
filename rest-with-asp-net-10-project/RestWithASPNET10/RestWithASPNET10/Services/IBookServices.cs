@@ -9,7 +9,6 @@ namespace RestWithASPNET10.Services
         void Delete(long id);
         List<BookDTO> FindAll();
         BookDTO FindById(long id);
-        BookDTO FindByName(string title);
         BookDTO Update(BookDTO book);
     }
 }
