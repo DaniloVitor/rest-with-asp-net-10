@@ -1,13 +1,13 @@
 ﻿using RestWithASPNET10.Model;
-using RestWithASPNET10.Repositories.Impl;
+using RestWithASPNET10.Repositories;
 
 namespace RestWithASPNET10.Services.Impl
 {
     public class PersonServicesImpl : IPersonServices
     {
-        private IPersonRepository _repository;
+        private IRepository<Person> _repository;
 
-        public PersonServicesImpl(IPersonRepository repository)
+        public PersonServicesImpl(IRepository<Person> repository)
         {
             _repository = repository;
         }

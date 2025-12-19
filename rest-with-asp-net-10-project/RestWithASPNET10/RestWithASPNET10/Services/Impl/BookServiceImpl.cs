@@ -1,14 +1,14 @@
 ﻿using RestWithASPNET10.Model;
-using RestWithASPNET10.Repositories.Impl;
+using RestWithASPNET10.Repositories;
 using System;
 
 namespace RestWithASPNET10.Services.Impl
 {
     public class BookServiceImpl : IBookServices
     {
-        private IBookRepository _repository;
+        private IRepository<Book> _repository;
 
-        public BookServiceImpl(IBookRepository repository)
+        public BookServiceImpl(IRepository<Book> repository)
         {
             _repository = repository;
         }
