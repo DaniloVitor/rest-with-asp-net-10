@@ -1,7 +1,8 @@
-﻿using RestWithASPNET10.Data.DTO;
+﻿using RestWithASPNET10.Data.Converter.Contract;
+using RestWithASPNET10.Data.DTO;
 using RestWithASPNET10.Model;
 
-namespace RestWithASPNET10.Data.Converter.Contract
+namespace RestWithASPNET10.Data.Converter.Impl
 {
     public class PersonConverter : IParser<PersonDTO, Person>, IParser<Person, PersonDTO>
     {

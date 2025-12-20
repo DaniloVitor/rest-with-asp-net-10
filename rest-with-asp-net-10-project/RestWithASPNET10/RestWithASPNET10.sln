@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestWithASPNET10", "RestWithASPNET10\RestWithASPNET10.csproj", "{AECA1998-3CFD-45A3-9FDC-D728234BC0E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestWithASPNET10.Testes", "RestWithASPNET10.Testes\RestWithASPNET10.Testes.csproj", "{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +29,23 @@ Global
 		{AECA1998-3CFD-45A3-9FDC-D728234BC0E4}.Release|x64.Build.0 = Release|Any CPU
 		{AECA1998-3CFD-45A3-9FDC-D728234BC0E4}.Release|x86.ActiveCfg = Release|Any CPU
 		{AECA1998-3CFD-45A3-9FDC-D728234BC0E4}.Release|x86.Build.0 = Release|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Debug|x64.Build.0 = Debug|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Debug|x86.Build.0 = Debug|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Release|x64.ActiveCfg = Release|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Release|x64.Build.0 = Release|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Release|x86.ActiveCfg = Release|Any CPU
+		{8E9ECFAA-5307-47B9-8134-1B1CE08802A4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {750E9FAF-1140-45D2-BFA2-A253AEB910C5}
 	EndGlobalSection
 EndGlobal
